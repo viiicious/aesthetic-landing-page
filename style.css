@@ -1,69 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: verdana, san serif;
+  font-family: "Roboto";
 }
 
-.container {
+body {
+  background-image: url(img.jpg);
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  outline: 5px dashed blue;
 }
 
-.wrapper {
-  display: grid;
-  place-content: center;
-  border: 2px solid black;
-  background-color: red;
-  width: 30%;
-  height: 40%;
-  outline: 5px dashed blue;
+.formContainer {
+  border: 1.5px solid rgb(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  width: 290px;
+  height: 270px;;
 }
 
-.wrapper h1 {
+.formContainer h1 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+}
+
+.inputField {
   display: flex;
   justify-content: center;
-  font-size: 20px;
-  margin-bottom: 30px;
+  align-items: center;
+  margin: 10px 100px;
+  width: 72%;
+  border: 1.5px solid rgb(255, 255, 255, .2);
+  border-radius: 20px;
+  padding: 2px 5px;
 }
 
-.inputContainer {
-  display: flex;
-  outline: 5px dashed blue;
+input {
+  background: transparent;
+  border: none;
+  color: #ffff;
+}
 
+input::placeholder {
+  font-size: 10px;
+  color: #ffffff; 
+  opacity: 1;  /* Optional: make sure the opacity is fully visible */
+}
+
+input:focus {
+  outline: none;
 }
 
 .formfield {
-  width: 100%; 
-  border: none;
-  border-radius: 100px;
-  padding: 5px 0 5px 10px;
+  margin: 4px 3px;
+  transition: color 0.3s ease;
 }
 
-.icon {
-  position: absolute;
-  right: 10px; 
-  top: 50%;
-  transform: translateY(-50%); 
+.formfield:hover {
+  border-color: #3498db;
 }
 
-.rememberMe {
-  display: flex;
-  outline: 5px dashed blue;
-}
-
-.questionContainer {
+.rememberForgot {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  font-size: 14.5px;
+  font-size: 10px;
+  margin: 5px 0px;
 }
 
-.checkbox {;
+.rememberForgot p {
+  margin-left: 3px;
 }
+
+.forgotLink {
+  padding-left: 60px;
+  text-decoration: none;
+  color: white;
+}
+
+.forgotLink:hover {
+  background-color: none;
+  color: rgb(231, 216, 216);
+}
+
+.loginBtn {
+  width: 72%;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-top: 3px;
+  margin-bottom: 11px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.loginBtn:hover {
+  background-color: rgb(231, 216, 216);
+  cursor: pointer;
+}
+
+.registerLink {
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.registerLink a:hover {
+  background-color: none;
+  color: rgb(231, 216, 216);
+  cursor: pointer;
+}
+
+.classRegister {
+  color: #ffffff; /* Change to your desired color */
+  text-decoration: none;
+  opacity: 1;
+}
+
+
 
 
 
